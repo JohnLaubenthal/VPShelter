@@ -22,7 +22,7 @@ namespace VPShelter
             //default constructor
         }
 
-        public PetFood( string dog, string cate, string dogfood, string catfood)
+        public PetFood( string dog, string cat, string dogfood, string catfood)
         {
             this.Dog = dog;
             this.Cat = Cat;
@@ -36,5 +36,5 @@ namespace VPShelter
             DogFood = "Pedigree";
             CatFood = "MeowMix";
         }
-    }
-}
+    }//class end
+}//namespace end

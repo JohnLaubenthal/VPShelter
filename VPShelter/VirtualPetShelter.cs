@@ -10,25 +10,31 @@ namespace VPShelter
     {
         public string PetHouse { get; set; }
         public string PeopleHouse { get; set; }
-        public List<Pets> PetList { get; set; }
+        public List<string> PetList { get; set; }
         public string Pets { get; set; }
+        public List<string> Volunteer { get; set; }
+        public string AnimalType { get; set; }
+
+
+
 
         public VirtualPetShelter()
         {
             //default constructor
         }
 
-        public VirtualPetShelter(string petHouse, string peopleHouse, List<Pets> petList)
+        public VirtualPetShelter(string petHouse, string peopleHouse, List<string> petList)
         {
             this.PetHouse = petHouse;
             this.PeopleHouse = peopleHouse;
             this.PetList = petList;
         }
 
-        public VirtualPetShelter(List<Pets> petlist, string dog, string cat)
+        public VirtualPetShelter(List<string> petlist, string dog, string cat)
         {
             this.PetList = petlist;
-            this.PetList = petlist;
+            this.AnimalType = AnimalType;
+
         }
         Volunteer volunteerOne = new Volunteer();
         List<Volunteer> volunteerList = new List<Volunteer>();
@@ -36,6 +42,6 @@ namespace VPShelter
         List<Manager> managerList = new List<Manager>();
 
        
-    }
+    }//class end
 
-}
+}//namespace end
