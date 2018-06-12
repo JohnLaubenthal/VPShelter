@@ -9,23 +9,28 @@ namespace VPShelter
   public abstract class Employee
     {
         public int EmployeeID { get; set; }
-
-
         public Employee()
         {
-
+            //default Ctor
         }
 
-        public Employee(int employeeID)
+        //methods
+        public virtual string FedThePets()
         {
-            this.EmployeeID = employeeID;
+            return "Thanks for the grub!";
+
+        }
+        public virtual string WaterThePets()
+        {
+            return "Thanks for the drink!";
         }
 
-        // abstract methods
-        public abstract void Hunger();
-        public abstract void Thirst();
-        public abstract void Boredom();
-        public abstract void Tiredness();
+        
+
+        // abstract methods(2)
+        public abstract void PayRoll();
+        public abstract void Utilities();
+        
 
     }
 }

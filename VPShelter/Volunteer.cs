@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPShelter
 {
-    class Volunteer : Employee
+    public class Volunteer : Employee
     {
         public string VolunteerName { get; set; }
 
@@ -20,29 +20,36 @@ namespace VPShelter
             this.VolunteerName = VolunteerName;
         }
 
-        public override void Hunger()
+        public void Hunger()
         {
             Console.WriteLine("Thanks for feeding me!");
         }
 
-        public override void Thirst()
+        public void Thirst()
         {
             Console.WriteLine("Thanks for the drink!");
         }
 
-        public override void Boredom()
+        public void Boredom()
         {
             Console.WriteLine("Thanks for the walk!");
         }
 
-        public override void Tiredness()
+        public void Tiredness()
         {
             Console.WriteLine("I needed the sleep!");
         }
 
-       
-            
-        
+        public override void PayRoll()
+        {
+
+        }
+        public override void Utilities()
+        {
+
+        }
+
+
     }//class end
         
 }//namespace end

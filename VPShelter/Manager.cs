@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 
 namespace VPShelter
 {
-    class Manager : Employee
-    {
-        public override void Boredom()
+
+   public class Manager : Employee
+   {
+        public int Salary { get; set; }
+
+        public override void PayRoll()
         {
-            throw new NotImplementedException();
+
+        }
+        public override void Utilities()
+        {
+
+        }
+        public string Adoption()
+        {
+            return "Thanks for the new home!";
         }
 
-        public override void Hunger()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Thirst()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Tiredness()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

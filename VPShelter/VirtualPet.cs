@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPShelter
 {
-    class VirtualPet
+   public class VirtualPet
     {
         //declaring fields
         private string name;
@@ -181,6 +181,11 @@ namespace VPShelter
         {
             this.Boredom = num;
             return Boredom;
+        }
+
+        public void Play()
+        {
+            Console.WriteLine("Thanks for the walk!");
         }
     }
 }

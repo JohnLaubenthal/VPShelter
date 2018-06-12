@@ -9,32 +9,16 @@ namespace VPShelter
     class PetFood : VirtualPet
     {
 
-                //fields & properties
-        public string Dog { get; set; }
-        public string Cat { get; set; }
-        public string DogFood { get; set; }
-        public string CatFood { get; set; }
+        public string PetType { get; set; }
+        public string PetDiet { get; set; }
 
 
-                
-        public PetFood()
+        public PetFood(string PetType, string PetFood)
         {
-            //default constructor
-        }
 
-        public PetFood( string dog, string cat, string dogfood, string catfood)
-        {
-            this.Dog = dog;
-            this.Cat = Cat;
-            this.DogFood = dogfood;
-            this.CatFood = catfood;
+            this.PetType = PetType;
+            this.PetDiet = PetDiet;
         }
-        public void ViewPetInfo()
-        {
-            Dog = "Tyson";
-            Cat = "Crystal";
-            DogFood = "Pedigree";
-            CatFood = "MeowMix";
-        }
+    
     }//class end
 }//namespace end

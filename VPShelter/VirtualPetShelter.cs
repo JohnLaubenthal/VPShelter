@@ -30,10 +30,10 @@ namespace VPShelter
             this.PetList = petList;
         }
 
-        public VirtualPetShelter(List<string> petlist, string dog, string cat)
+        public VirtualPetShelter(List<string> petlist, string animalType)
         {
             this.PetList = petlist;
-            this.AnimalType = AnimalType;
+            this.AnimalType = animalType;
 
         }
         Volunteer volunteerOne = new Volunteer();
