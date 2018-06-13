@@ -32,8 +32,16 @@ namespace VPShelter
 
                 if (userManagerResponse == 1)
                 {
-                        
-                      
+                        Console.WriteLine("These are Tyson's stats.");
+                        Console.WriteLine(tyson.Hunger);
+                        Console.WriteLine(tyson.Thirst);
+                        Console.WriteLine(tyson.Boredom);
+                        Console.WriteLine(tyson.Tiredness);
+                        Console.WriteLine("These are Crystal's stats.");
+                        Console.WriteLine(crystal.Hunger);
+                        Console.WriteLine(crystal.Thirst);
+                        Console.WriteLine(crystal.Boredom);
+                        Console.WriteLine(crystal.Tiredness);
                 }
 
                 if (userManagerResponse == 2)
