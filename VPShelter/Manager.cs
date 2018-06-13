@@ -21,7 +21,8 @@ namespace VPShelter
         }
         public string Adoption()
         {
-            return "Thanks for the new home!";
+           
+                return "Thanks for the new home!";
         }
 
     }

@@ -11,13 +11,16 @@ namespace VPShelter
         static void Main(string[] args)
         {
             VirtualPet tyson = new VirtualPet("Tyson", 25, 15, 25, 15);
+
             VirtualPet crystal = new VirtualPet("Crystal", 25, 15, 25, 15);
+
             Manager joe = new Manager();
+
 
             string userTypeResponse ="";
             while (userTypeResponse != "quit") { 
             Console.WriteLine("Welcome to John's Virtual Pet Shelter!");
-            Console.WriteLine("Are you a Manager or Volunteer, or press quit to exit.");
+            Console.WriteLine("Are you a Manager or Volunteer, or enter 'quit' to exit.");
             userTypeResponse = Console.ReadLine().ToLower();
             
             if (userTypeResponse == "manager")
@@ -29,18 +32,26 @@ namespace VPShelter
 
                 if (userManagerResponse == 1)
                 {
-                    
+                        
+                      
                 }
 
                 if (userManagerResponse == 2)
                 {
                     tyson.Play();
-                   
+                        
                 }
                 if (userManagerResponse == 3)
                 {
-                    Console.WriteLine(joe.Adoption());
+                    Console.WriteLine("Please select 4. for Tyson: Jack Russell Terrier or 5. Crystal: Siamese Cat");
+                        int ManagerResponse = int.Parse(Console.ReadLine());
+                        Console.WriteLine(joe.Adoption());
                 }
+                if (userManagerResponse == 3)
+                    {
+                        Console.WriteLine("You have adopted Tyson!");
+                        Console.WriteLine(joe.Adoption());
+                    }
                   
             }
 
@@ -49,8 +60,23 @@ namespace VPShelter
                 Console.WriteLine("1. Would you like to give the pets a drink?");
                 Console.WriteLine("2. Would you like to feed the pets?");
                 int userVolunteerResponse = int.Parse(Console.ReadLine());
-
+                
+                if (userVolunteerResponse == 1)
+            {
+                Console.WriteLine("Thanks for the drink!");
             }
+                if (userVolunteerResponse == 2)
+                    {
+                        Console.WriteLine("Thanks for feeding me!");
+                    }
+
+
+
+                }
+
+
+
+
             }
 
 

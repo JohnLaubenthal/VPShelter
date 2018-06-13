@@ -78,6 +78,7 @@ namespace VPShelter
             //default constructor
         }
 
+
         //loaded constructor
         public VirtualPet(string name, int hunger, int thirst, int boredom, int tiredness)
         {
